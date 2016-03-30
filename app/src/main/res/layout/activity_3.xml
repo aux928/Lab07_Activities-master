@@ -9,18 +9,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <include android:id="@+id/question_answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        layout="@layout/question_answer"
-        />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="3"
         android:textSize="96sp" />
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -45,6 +40,13 @@
             android:onClick="main"
             android:text="MAIN" />
 
+
     </LinearLayout>
+    <TextView
+        android:id="@+id/tv_main_activity_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="MainActivity 傳來的資料"
+        android:textAppearance="@android:style/TextAppearance.Large" />
 
 </LinearLayout>

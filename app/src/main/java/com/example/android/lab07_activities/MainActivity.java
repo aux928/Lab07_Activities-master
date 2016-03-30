@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     private static final int SELECT_COLOR_REQUEST = 0;
     private static final int EDIT_TEXT_REQUEST = 1;
 
+    private int m_color = 0xFFFFFFFF;//記錄選了什麼顏色
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 Bundle bundle = data.getExtras();
 
                 // 從包裹拿出 Int 資料， 需提供資料的 key
-                int colorInt = bundle.getInt(ColorPickerActivity.BUNDLE_KEY_COLOR_INT);
+                m_color = bundle.getInt(ColorPickerActivity.BUNDLE_KEY_COLOR_INT);
                 CharSequence colorName = bundle.getCharSequence(ColorPickerActivity.BUNDLE_KEY_COLOR_NAME);
 
                 // 從包裹拿出 CharSequence 資料， 需提供資料的 key
@@ -58,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // 變更 ScrollView 背景顏色
                 ScrollView scrollView = (ScrollView)findViewById(R.id.scroll_view);
-                scrollView.setBackgroundColor(colorInt);
+                scrollView.setBackgroundColor(m_color);
 
             }
         } else if(requestCode == EDIT_TEXT_REQUEST) {
@@ -81,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void next(View view) {
         Intent intent = new Intent(this, Activity1.class);
+        intent.putExtra(ColorPickerActivity.BUNDLE_KEY_COLOR_INT, m_color);
         startActivity(intent);
     }
 

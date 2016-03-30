@@ -23,8 +23,8 @@ public class ColorPickerActivity extends AppCompatActivity {
     }
 
     private void initColorData() {
-        // 預設選取紅色
-        RadioButton radio = (RadioButton)findViewById(R.id.radio_holo_red_light);
+        // 預設選取紫色
+        RadioButton radio = (RadioButton)findViewById(R.id.radio_holo_blue_light);
         mColorInt = radio.getCurrentTextColor();
         mColorName = radio.getText();
     }

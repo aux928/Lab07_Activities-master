@@ -21,40 +21,52 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/radio_holo_red_light"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:buttonTint="@android:color/holo_red_light"
-                android:checked="true"
-                android:onClick="clickColor"
-                android:text="holo_red_light"
-                android:textAppearance="@android:style/TextAppearance.Large"
-                android:textColor="@android:color/holo_red_light" />
 
             <RadioButton
-                android:id="@+id/radio_holo_orange_dark"
+                android:id="@+id/radio_holo_purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_purple"
+                android:checked="true"
+                android:onClick="clickColor"
+                android:text="holo_purple"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@android:color/holo_purple" />
+
+            <RadioButton
+                android:id="@+id/radio_holo_blue_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:onClick="clickColor"
+                android:text="holo_blue_light"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@android:color/holo_blue_light" />
+　　　　　　   <RadioButton
+                android:id="@+id/radio_holo_orange_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:buttonTint="@android:color/holo_orange_dark"
+                android:checked="true"
                 android:onClick="clickColor"
                 android:text="holo_orange_dark"
                 android:textAppearance="@android:style/TextAppearance.Large"
                 android:textColor="@android:color/holo_orange_dark" />
+
+
             <RadioButton
-                android:id="@+id/tertiary_text_dark"
+                android:id="@+id/radio_tertiary_text_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:buttonTint="@android:color/tertiary_text_dark"
+                android:buttonTint="@android:color/tertiary_text_light"
                 android:onClick="clickColor"
-                android:text="tertiary_text_dark"
+                android:text="tertiary_text_light"
                 android:textAppearance="@android:style/TextAppearance.Large"
-                android:textColor="@android:color/tertiary_text_dark"/>
-
+                android:textColor="@android:color/tertiary_text_light"/>
             <RadioButton
-                android:id="@+id/holo_green_light"
+                android:id="@+id/radio_holo_green_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -64,16 +76,8 @@
                 android:textAppearance="@android:style/TextAppearance.Large"
                 android:textColor="@android:color/holo_green_light" />
 
-            <RadioButton
-                android:id="@+id/holo_blue_dark"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:buttonTint="@android:color/holo_blue_dark"
-                android:onClick="clickColor"
-                android:text="holo_blue_dark"
-                android:textAppearance="@android:style/TextAppearance.Large"
-                android:textColor="@android:color/holo_blue_dark" />
+
+
 
         </RadioGroup>
 
